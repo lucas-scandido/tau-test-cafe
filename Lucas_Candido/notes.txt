@@ -31,6 +31,19 @@
             test('User must be logged successfuly', async t => {
                 //Teste code here
 
-});
+            });
 
+------------
 
+- I can specify a start page for individual test with command .page('')
+
+-----------
+
+Interact With Page Elements:
+1. navigateTo: Navigates to the specified URL.
+        1.1 The difference between .navigateTo is that the 
+        .page I go to the specified direct page. As for .navigateTo, 
+        it will first enter the home page configured within the "Fixture" and then enter the page that was configured within the "Test". See the test ../tests/4-navigate-to.ts
+
+2. iFrame.
+3. 

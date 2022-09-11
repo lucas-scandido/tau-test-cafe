@@ -2,7 +2,7 @@ import { fixture } from "testcafe";
 import { Selector } from "testcafe";
 
 fixture('Home Page Validation')
-    .page('https://devexpress.github.io/testcafe/example/')
+    .page('https://devexpress.github.io/testcafe/example/');
 
 test('Checking Home Page', async t =>{
     await t.expect(Selector('#main-form').withText('Example').exists).ok();
@@ -24,4 +24,4 @@ test('Filling the Page', async n =>{
         .expect(Selector('#main-form').withText('Please let us know what you think:').exists).ok();
     await n.click('#submit-button').wait(5000);
     await n.expect(Selector('#article-header').withText('Thank you, Lucas!').exists).ok();
-})
+});
