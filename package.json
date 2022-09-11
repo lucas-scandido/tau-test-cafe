@@ -1,0 +1,14 @@
+{
+  "name": "tau_testcafe",
+  "version": "1.0.0",
+  "description": "Test Automation University - Course: E2E Web Testing with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome"
+  },
+  "author": "Lucas da Silva Candido",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^2.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+        -- TestCafe --
+1. Free open-source tool in Node.Js.
+2. Support desktop, mobile, remote and cloud browsers.
+3. Tests can be writen in TS or JS.
+4. TestCafe doensn't control a browser like Cypress.
+
+        --Strong Points--
+1. Never have to waiting an element to load the page.
+2. Can be running in a multiple browser just a simple command.
+3. Support page objects model, data driven and BDD.
+4. Compatible with CI tools, like Jenkins, GitHub Actions, Travis, TeamCity.
+
+        --Async / Await functions--
+1. Async functions aways return a promise.
+2. Await literally makes until the promise settles, and then go on with the result.
+
+        --Fixtures--
+1. Tests must be organizade in categories called FIXTURES.
+2. Tests can contain one or more fixtures.
+    2.1. Example:
+            fixture`Login Test Suite`
+                .page`https://www.saucedemo.com/`;
+
+        --Tests--
+1. To create a Test, call the test function and pass a function with the test code inside.
+2. The test code function accepts the TEST CONTROLLER object as a parameter.
+    2.1. Example:
+            fixture`Test Suite Name`
+                .page`https://www.saucedemo.com/`;
+
+            test('User must be logged successfuly', async t => {
+                //Teste code here
+
+});
+
+
